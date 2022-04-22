@@ -1,6 +1,6 @@
-# polygonscan-verification-test
+# greeter-test
 
-If this works, the verified source on etherscan should include the following comment:
+If this works, the "similar" source on etherscan should include the following comment [instead of my better comment](https://github.com/Rjected/greeter-test/blob/60d58e2e059414e5a12d6366dc59ffcd59d76456/src/GreeterV1337.sol#L13):
 ```
 //    __       ___ ___
 //  /'_ `\   /' __` __`\
