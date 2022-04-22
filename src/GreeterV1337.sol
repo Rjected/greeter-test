@@ -19,7 +19,7 @@ pragma solidity ^0.8.0;
 //   |___/                                                                                 |__/
 //
 
-contract GreeterV1 {
+contract GreeterV1337 {
     function greet() public pure returns (string memory) {
         return "gm!";
     }
