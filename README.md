@@ -1,6 +1,12 @@
 # greeter-test
 
-If this works, the "similar" source on etherscan should include the following comment [instead of my better comment](https://github.com/Rjected/greeter-test/blob/60d58e2e059414e5a12d6366dc59ffcd59d76456/src/GreeterV1337.sol#L13):
+Used for testing [forge scripting](https://github.com/foundry-rs/foundry/pull/1208) - deploy the `GreeterV1337` contract with:
+```
+forge script ./src/test/GreeterV1337.t.sol -i 1 --tc GreeterTest --sig "deployGreeter()" --fork-url <RPC URL> --execute
+```
+
+Additionally, [GreeterV1337.t.sol](./src/test/GreeterV1337.t.sol) would need to be changed to include the address you'd like to broadcast the deploy transaction from.
+
 ```
 //    __       ___ ___
 //  /'_ `\   /' __` __`\
@@ -9,14 +15,4 @@ If this works, the "similar" source on etherscan should include the following co
 //  \/___L\ \ \/_/\/_/\/_/
 //    /\____/
 //    \_/__/
-
-//         _            _                                                     __    _           _
-//        | |          (_)                                                   / /   (_)         | |
-//   ___  | |_   _ __   _   _ __     ___        ___    ___    _ __ ___      / /     _    ___   | |__    ___
-//  / __| | __| | '__| | | | '_ \   / _ \      / __|  / _ \  | '_ ` _ \    / /     | |  / _ \  | '_ \  / __|
-//  \__ \ | |_  | |    | | | |_) | |  __/  _  | (__  | (_) | | | | | | |  / /      | | | (_) | | |_) | \__ \
-//  |___/  \__| |_|    |_| | .__/   \___| (_)  \___|  \___/  |_| |_| |_| /_/       | |  \___/  |_.__/  |___/
-//                         | |                                                    _/ |
-//                         |_|                                                   |__/
 ```
-[Oh no! graffiti! Attackers!](https://info.etherscan.com/update-on-similar-match-contract-verification/)
